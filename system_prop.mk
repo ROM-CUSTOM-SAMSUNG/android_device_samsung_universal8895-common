@@ -99,3 +99,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.sec.radio.def_network=10,10 \
     ro.telephony.default_network=10,10
 
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.debuggable=1 \
+    persist.service.adb.enable=1 \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
