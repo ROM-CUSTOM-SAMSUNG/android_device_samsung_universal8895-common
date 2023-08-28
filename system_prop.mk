@@ -107,3 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
+
+# ADB wireless
+PRODUCT_PROPERTY_OVERRIDES += \
+    service.adb.tcp.port=5555
